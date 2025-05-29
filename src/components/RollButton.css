@@ -1,0 +1,31 @@
+.roll-button {
+  background-color: #78AA28;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  width: 205px;
+  height: 58px;
+  border-radius: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 77%;
+}
+
+.roll-button-text {
+  font-family: 'montserrat';
+  font-weight: 800;
+  font-size: 24px;
+  color: white;
+}
+
+.roll-button-shadow {
+  background-color: #4D6B1E;
+  width: 205px;
+  height: 58px;
+  border-radius: 44px;
+  position: absolute;
+  z-index: -1;
+  top: 7px;
+}
