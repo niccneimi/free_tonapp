@@ -17,6 +17,13 @@ const LanguageSelector = () => {
     };
 
     useEffect(() => {
+        languages.forEach(lang => {
+            const img = new Image();
+            img.src = lang.image;
+        });
+    }, []);
+
+    useEffect(() => {
         const handleClickOutside = (event) => {
           if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
             setIsOpen(false);
