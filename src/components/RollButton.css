@@ -10,7 +10,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 25rem auto;
+  margin: 0 auto;
+  grid-row: 4;
 }
 
 .roll-button-text {
