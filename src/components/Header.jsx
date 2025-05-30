@@ -1,5 +1,6 @@
 import './Header.css';
 import logo from '../assets/logo.svg';
+import LanguageSelector from './LanguageSelector';
 
 export default function Header() {
     return (
@@ -8,6 +9,7 @@ export default function Header() {
             <div className="logo">
                 <img src={logo} alt="FreeTon" />
             </div>
+            <LanguageSelector />
         </header>
     );
 }

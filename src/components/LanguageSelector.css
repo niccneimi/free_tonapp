@@ -1,0 +1,48 @@
+.language-selector {
+    position: relative;
+    user-select: none;
+    font-family: 'Montserrat';
+    font-weight: 800;
+  }
+  
+  .selected-language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selected-language img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .language-dropdown {
+    position: absolute;
+    top: calc(0%);
+    right: 0;
+    background: #C9C9C9;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 100;
+    width: 100%;
+    min-width: 80px;
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .language-option-text {
+    position: relative;
+    bottom: 11px;
+  }
+
+  .language-option-image {
+    margin-right: 5px;
+  }

@@ -25,3 +25,16 @@ export const footMenuItems = [
         text: 'Профиль',
     },
 ]
+
+export const languages = [
+    {
+        image: 'src/assets/russia.svg',
+        alt: 'Русский',
+        text: 'RU',
+    },
+    {
+        image: 'src/assets/usa.svg',
+        alt: 'English',
+        text: 'EN',
+    },    
+]
