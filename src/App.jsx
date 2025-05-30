@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import RollButton from './components/RollButton'
 import FootMenu from './components/FootMenu'
+import Header from './components/Header'
 import './App.css'
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
 
   return (
     <div className="app-container">
-      <RollButton />
+      <Header />
+      <main className="main-content">
+        <RollButton />
+      </main>
       <FootMenu />
     </div>
   )
