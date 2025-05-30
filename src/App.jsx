@@ -2,6 +2,7 @@ import { useState } from 'react'
 import RollButton from './components/RollButton'
 import FootMenu from './components/FootMenu'
 import Header from './components/Header'
+import Rullet from './components/Rullet'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <div className="app-container">
       <Header />
       <main className="main-content">
+        <Rullet />
         <RollButton />
       </main>
       <FootMenu />
