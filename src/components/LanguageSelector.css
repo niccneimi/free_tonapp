@@ -3,6 +3,8 @@
     user-select: none;
     font-family: 'Montserrat';
     font-weight: 800;
+    grid-column: 3;
+    justify-self: center;
   }
   
   .selected-language {
