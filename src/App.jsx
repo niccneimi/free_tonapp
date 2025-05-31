@@ -4,6 +4,7 @@ import FootMenu from './components/FootMenu'
 import Header from './components/Header'
 import Rullet from './components/Rullet'
 import RollTable from './components/RollTable'
+import Add from './components/Add'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Rullet />
         <RollTable />
         <RollButton />
+        <Add />
       </main>
       <FootMenu />
     </div>

@@ -1,0 +1,38 @@
+.add-container {
+    grid-row: 5;
+    margin: 0 auto;
+    max-width: 95%;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.add-text {
+    font-family: 'Montserrat';
+    color: #F4F4F4;
+    font-weight: 800;
+    font-size: clamp(16px, 1.5vw, 24px);
+}
+
+.add-pointer {
+    color: #575757;
+    font-family: 'Montserrat';
+    font-size: 0.85em;
+    font-weight: 600;
+    display: inline;
+    margin-left: 4px;
+}
+
+.add-button {
+    background-color: #C9C9C9;
+    color: #343434;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    border-radius: 44px;
+    font-size: clamp(12px, 1.5vw, 16px);
+    width: 121px;
+    height: 19px;
+}
