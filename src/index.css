@@ -76,9 +76,25 @@ button:focus-visible {
   }
 }
 
-html, body, #root, .app-container, * {
+* {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+
+button, 
+.menu-item, 
+.roll-button, 
+.add-button, 
+[role="button"],
+[class*="button"] {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none !important;
+  user-select: none;
+  -webkit-user-select: none;
 }
