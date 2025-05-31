@@ -7,7 +7,12 @@
     grid-auto-rows: minmax(10px, auto);
     padding-top: 32px;
     padding-bottom: 15px;
-    margin: 0 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 100%;
+    box-sizing: border-box;
     gap: 1rem;
 }
 
@@ -41,4 +46,105 @@
 
 .rullet-balance-icon {
     align-self: end;
+}
+
+.rullet-subtitle {
+    grid-row: 3;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #F2F2F2;
+    justify-self: center;
+}
+
+.rullet-result-container {
+    grid-row: 4;
+    background-color: #575757;
+    border-radius: 44px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 30px 20px;
+}
+
+.rullet-result-number-item1 {
+    grid-column: 1;
+    justify-self: center;
+    background-color: #343434;
+    border-radius: 44px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #78AA28;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 35px;
+}
+
+.rullet-result-number-item2 {
+    grid-column: 2;
+    justify-self: center;
+    background-color: #343434;
+    border-radius: 44px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #78AA28;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 35px;
+}
+
+.rullet-result-number-item3 {
+    grid-column: 3;
+    justify-self: center;
+    background-color: #343434;
+    border-radius: 44px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #78AA28;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 35px;
+}
+
+.rullet-result-number-item4 {
+    grid-column: 4;
+    justify-self: center;
+    background-color: #343434;
+    border-radius: 44px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #78AA28;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 35px;
+}
+
+.rullet-result-number-item5 {
+    grid-column: 5;
+    justify-self: center;
+    background-color: #343434;
+    border-radius: 44px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #78AA28;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 35px;
 }

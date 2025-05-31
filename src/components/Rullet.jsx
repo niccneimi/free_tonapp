@@ -11,6 +11,14 @@ export default function Rullet() {
                     <img src={tonIcon} alt="TON" />
                 </div>
             </div>
+            <div className="rullet-subtitle">Выпавшее число</div>
+            <div className="rullet-result-container">
+                <div className="rullet-result-number-item1">--</div>
+                <div className="rullet-result-number-item2">--</div>
+                <div className="rullet-result-number-item3">--</div>
+                <div className="rullet-result-number-item4">--</div>
+                <div className="rullet-result-number-item5">--</div>
+            </div>
         </div>
     );
 }
