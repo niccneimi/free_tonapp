@@ -8,18 +8,49 @@ import Add from './components/Add'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentContent, setCurrentContent] = useState('cran')
+
+  const renderContent = () => {
+    switch (currentContent) {
+      case 'cran':
+        return (
+          <>
+            <Rullet />
+            <RollTable />
+            <RollButton />
+            <Add />
+          </> 
+        );
+      case 'challenges':
+        return (
+          <>
+          </>
+        );
+      case 'staking':
+        return (
+          <>
+          </>
+        );
+      case 'friends':
+        return (
+          <>
+          </>
+        );
+      case 'profile':
+        return (
+          <>
+          </>
+        );
+    }
+  };
 
   return (
     <div className="app-container">
       <Header />
       <main className="main-content">
-        <Rullet />
-        <RollTable />
-        <RollButton />
-        <Add />
+        {renderContent()}
       </main>
-      <FootMenu />
+      <FootMenu setCurrentContent={setCurrentContent} currentContent={currentContent}/>
     </div>
   )
 }
