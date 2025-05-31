@@ -3,6 +3,7 @@ import RollButton from './components/RollButton'
 import FootMenu from './components/FootMenu'
 import Header from './components/Header'
 import Rullet from './components/Rullet'
+import RollTable from './components/RollTable'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <main className="main-content">
         <Rullet />
+        <RollTable />
         <RollButton />
       </main>
       <FootMenu />
