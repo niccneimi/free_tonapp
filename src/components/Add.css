@@ -35,4 +35,5 @@
     font-size: clamp(12px, 1.5vw, 16px);
     width: 121px;
     height: 19px;
+    min-width: max-content;
 }

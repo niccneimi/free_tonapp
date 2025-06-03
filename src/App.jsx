@@ -5,17 +5,19 @@ import Header from './components/Header'
 import Rullet from './components/Rullet'
 import RollTable from './components/RollTable'
 import Add from './components/Add'
+import ProfileMenu from './components/ProfileMenu'
 import './App.css'
 
 function App() {
   const [currentContent, setCurrentContent] = useState('cran')
+  const [profileSubMenu, setProfileSubMenu] = useState('profile')
 
   const renderContent = () => {
     switch (currentContent) {
       case 'cran':
         return (
           <>
-            <Rullet />
+            <Rullet currentContent={currentContent} gridRow="1"/>
             <RollTable />
             <RollButton />
             <Add />
@@ -37,10 +39,21 @@ function App() {
           </>
         );
       case 'profile':
-        return (
-          <>
-          </>
-        );
+        switch (profileSubMenu) {
+          case 'profile':
+            return (
+              <>
+                <ProfileMenu profileSubMenu={profileSubMenu} setProfileSubMenu={setProfileSubMenu}/>
+                <Rullet currentContent={currentContent} gridRow="2"/>
+              </>
+            );
+          case 'advertising':
+            return (
+              <>
+                <ProfileMenu profileSubMenu={profileSubMenu} setProfileSubMenu={setProfileSubMenu}/>
+              </>
+            );
+        }
     }
   };
 
