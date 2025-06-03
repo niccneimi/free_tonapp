@@ -7,6 +7,7 @@ import RollTable from './components/RollTable'
 import Add from './components/Add'
 import ProfileMenu from './components/ProfileMenu'
 import TransactionTable from './components/TransactionTable'
+import AdvertisingCabinet from './components/AdvertisingCabinet'
 import './App.css'
 
 function App() {
@@ -60,7 +61,9 @@ function App() {
           case 'advertising':
             return (
               <>
+                <AdvertisingCabinet />
                 <ProfileMenu profileSubMenu={profileSubMenu} setProfileSubMenu={setProfileSubMenu}/>
+                <Add />
               </>
             );
         }
