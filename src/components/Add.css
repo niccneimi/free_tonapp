@@ -1,10 +1,13 @@
 .add-container {
-    grid-row: 5;
+    grid-row-end: auto;
     margin: 0 auto;
     max-width: 95%;
     width: 100%;
     box-sizing: border-box;
     align-items: center;
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
 }
 
 .add-text {

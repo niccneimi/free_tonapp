@@ -12,3 +12,32 @@
   margin: 0 auto;
   width: 100%;
 }
+
+.last-transactions {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  color: #F4F4F4;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.transaction-column-names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 70%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.transaction-column-name {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 600;
+  color: #F4F4F4;
+  justify-self: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

@@ -1,6 +1,6 @@
 import './Add.css';
 
-export default function Add() {
+export default function Add({ gridRow }) {
     return (
         <div className="add-container">
             <div className="add-text">Схемы, темки, абузы, заработок! Всё это в моём канале!<span className="add-pointer">Реклама</span></div>

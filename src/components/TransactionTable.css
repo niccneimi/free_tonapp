@@ -1,0 +1,17 @@
+.transactions-table {
+    grid-row: 5;
+    background-color: #C9C9C9;
+    border-radius: 44px;
+    margin: 0 auto;
+    max-width: 95%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #343434;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 550px);
+}

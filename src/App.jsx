@@ -6,6 +6,7 @@ import Rullet from './components/Rullet'
 import RollTable from './components/RollTable'
 import Add from './components/Add'
 import ProfileMenu from './components/ProfileMenu'
+import TransactionTable from './components/TransactionTable'
 import './App.css'
 
 function App() {
@@ -45,6 +46,15 @@ function App() {
               <>
                 <ProfileMenu profileSubMenu={profileSubMenu} setProfileSubMenu={setProfileSubMenu}/>
                 <Rullet currentContent={currentContent} gridRow="2"/>
+                <div className="last-transactions">Последние транзакции</div>
+                <div className="transaction-column-names">
+                  <div className="transaction-column-name">Дата</div>
+                  <div className="transaction-column-name">Тип</div>
+                  <div className="transaction-column-name">Сумма</div>
+                  <div className="transaction-column-name">Статус</div>
+                </div>
+                <TransactionTable />
+                <Add />
               </>
             );
           case 'advertising':
