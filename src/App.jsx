@@ -13,7 +13,7 @@ import Staking from './components/Staking'
 import CashInForm from './components/CashInForm'
 import CashInRequestForm from './components/CashInRequestForm'
 import CashOutForm from './components/CashOutForm'
-
+import Challenges from './components/Challenges'
 import './App.css'
 
 function App() {
@@ -34,6 +34,8 @@ function App() {
       case 'challenges':
         return (
           <>
+            <Challenges />
+            <Add />
           </>
         );
       case 'staking':

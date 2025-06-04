@@ -1,0 +1,151 @@
+.challenges-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challenges-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    gap: 10px;
+}
+
+.client-switch-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.client-switch-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.client-switch {
+    width: 30px;
+    height: 15px;
+    background-color: #343434;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.client-switch::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.client-switch.active {
+    background-color: #D9D9D9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.client-switch.active::before {
+    background-color: #78AA28;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform: translateX(15px);
+}
+
+.balance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.balance-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.value-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-value {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.balance-icon {
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+    margin-bottom: 2.5px;
+}
+
+.challenges-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.challenges-menu-button {
+    background-color: #343434;
+    border-radius: 44px;
+    padding: 10px;
+    color: #C9C9C9;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    width: 100%;
+}
+
+.challenges-menu-button.active {
+    background-color: #78AA28;
+    color: #000000;
+}
+
+.no-clients-challenges-title {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0 auto;
+    max-width: 60%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.add-challenges-button {
+    background-color: #78AA28;
+    border-radius: 44px;
+    padding: 10px 20px;
+    color: #000000;
+    margin-top: 40px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+}
