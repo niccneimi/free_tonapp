@@ -9,6 +9,7 @@ import ProfileMenu from './components/ProfileMenu'
 import TransactionTable from './components/TransactionTable'
 import AdvertisingCabinet from './components/AdvertisingCabinet'
 import Friends from './components/Friends'
+import Staking from './components/Staking'
 import './App.css'
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
       case 'staking':
         return (
           <>
+            <Staking />
+            <Add />
           </>
         );
       case 'friends':
