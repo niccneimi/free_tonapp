@@ -19,7 +19,7 @@ export default function CashOutForm() {
             </div>
             <div className="min-amount">Минимальная сумма вывода: 1 TON</div>
             <button className="cash-out-form-button">ОТПРАВИТЬ ЗАЯВКУ</button>
-            <button className="cash-out-form-all-button">ВЫВЕСТИ ВСЕ</button>
+            <button className="cash-out-form-all-button">ВЫВЕСТИ ВСЁ</button>
             <div className="alert-description">Все заявки обрабатываются вручную, что может занять до 72 часов. Выводим средства только в TON. Убедитесь, что указали корректный адрес кошелька!</div>
         </div>
     )
