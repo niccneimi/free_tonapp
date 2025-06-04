@@ -2,7 +2,7 @@ import './Rullet.css';
 import tonIcon from '../assets/ton.svg';
 import ProfileMenu from './ProfileMenu';
 
-export default function Rullet({ currentContent, gridRow }) {
+export default function Rullet({ currentContent, gridRow, setCurrentContent }) {
     return (
         <div className="rullet" grid-row={gridRow}>
             <div className="rullet-title">Ваш баланс</div>
@@ -26,7 +26,7 @@ export default function Rullet({ currentContent, gridRow }) {
             )}
             {currentContent === 'profile' && (
                 <>
-                    <button className="cash-in">ПОПОЛНИТЬ</button>
+                    <button className="cash-in" onClick={() => setCurrentContent('cashIn')}>ПОПОЛНИТЬ</button>
                     <button className="cash-out">ВЫВЕСТИ</button>
                 </>
             )}

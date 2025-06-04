@@ -10,6 +10,7 @@ import TransactionTable from './components/TransactionTable'
 import AdvertisingCabinet from './components/AdvertisingCabinet'
 import Friends from './components/Friends'
 import Staking from './components/Staking'
+import CashInForm from './components/CashInForm'
 import './App.css'
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
             return (
               <>
                 <ProfileMenu profileSubMenu={profileSubMenu} setProfileSubMenu={setProfileSubMenu}/>
-                <Rullet currentContent={currentContent} gridRow="2"/>
+                <Rullet currentContent={currentContent} gridRow="2" setCurrentContent={setCurrentContent}/>
                 <div className="last-transactions">Последние транзакции</div>
                 <div className="transaction-column-names">
                   <div className="transaction-column-name">Дата</div>
@@ -73,6 +74,13 @@ function App() {
               </>
             );
         }
+      case 'cashIn':
+        return (
+          <>
+            <CashInForm />
+            <Add />
+          </>
+        );
     }
   };
 
