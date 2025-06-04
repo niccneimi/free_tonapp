@@ -25,6 +25,7 @@ export default function Staking() {
 
     const handleAccelerate = () => {
         setShowAccelerateModal(true);
+        setCounter(1);
     }
 
     const closeAccelerateModal = () => {
