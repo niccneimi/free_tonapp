@@ -11,6 +11,7 @@ import AdvertisingCabinet from './components/AdvertisingCabinet'
 import Friends from './components/Friends'
 import Staking from './components/Staking'
 import CashInForm from './components/CashInForm'
+import CashInRequestForm from './components/CashInRequestForm'
 import './App.css'
 
 function App() {
@@ -77,7 +78,14 @@ function App() {
       case 'cashIn':
         return (
           <>
-            <CashInForm />
+            <CashInForm setCurrentContent={setCurrentContent}/>
+            <Add />
+          </>
+        );
+      case 'cashInRequest':
+        return (
+          <>
+            <CashInRequestForm />
             <Add />
           </>
         );
