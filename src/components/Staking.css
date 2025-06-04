@@ -351,7 +351,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .total-rent-price-title {
@@ -385,5 +385,5 @@
     width: 100%;
     box-sizing: border-box;
     min-width: fit-content;
-    margin-top: 5px;
+    margin-top: 10px;
 }
