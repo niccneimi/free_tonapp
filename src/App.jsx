@@ -12,6 +12,8 @@ import Friends from './components/Friends'
 import Staking from './components/Staking'
 import CashInForm from './components/CashInForm'
 import CashInRequestForm from './components/CashInRequestForm'
+import CashOutForm from './components/CashOutForm'
+
 import './App.css'
 
 function App() {
@@ -86,6 +88,13 @@ function App() {
         return (
           <>
             <CashInRequestForm />
+            <Add />
+          </>
+        );
+      case 'cashOut':
+        return (
+          <>
+            <CashOutForm />
             <Add />
           </>
         );

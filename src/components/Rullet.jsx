@@ -27,7 +27,7 @@ export default function Rullet({ currentContent, gridRow, setCurrentContent }) {
             {currentContent === 'profile' && (
                 <>
                     <button className="cash-in" onClick={() => setCurrentContent('cashIn')}>ПОПОЛНИТЬ</button>
-                    <button className="cash-out">ВЫВЕСТИ</button>
+                    <button className="cash-out" onClick={() => setCurrentContent('cashOut')}>ВЫВЕСТИ</button>
                 </>
             )}
         </div>
