@@ -5,9 +5,39 @@
     width: 100%;
     box-sizing: border-box;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     left: 10px;
+    z-index: 999;
+}
+
+@supports (height: 100dvh) {
+    @media screen and (max-height: 500px) and (orientation: portrait) {
+        .add-container {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .add-container {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@supports (padding-bottom: env(keyboard-inset-height)) {
+    .add-container {
+        bottom: calc(60px + env(keyboard-inset-height, 0px));
+    }
+
+    @media screen and (max-height: 500px) {
+        .add-container {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
 }
 
 .add-text {
