@@ -14,6 +14,8 @@ import CashInForm from './components/CashInForm'
 import CashInRequestForm from './components/CashInRequestForm'
 import CashOutForm from './components/CashOutForm'
 import Challenges from './components/Challenges'
+import AddChallengeForm from './components/AddChallengeForm'
+
 import './App.css'
 
 function App() {
@@ -34,7 +36,7 @@ function App() {
       case 'challenges':
         return (
           <>
-            <Challenges />
+            <Challenges setCurrentContent={setCurrentContent} />
             <Add />
           </>
         );
@@ -97,6 +99,13 @@ function App() {
         return (
           <>
             <CashOutForm />
+            <Add />
+          </>
+        );
+      case 'addChallengeForm':
+        return (
+          <>
+            <AddChallengeForm />
             <Add />
           </>
         );

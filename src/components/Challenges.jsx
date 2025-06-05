@@ -3,7 +3,7 @@ import tonIcon from '../assets/ton.svg';
 import { useState } from 'react';
 import catImage from '../assets/cat.png';
 
-export default function Challenges() {
+export default function Challenges( {setCurrentContent} ) {
     const [currentChallenge, setCurrentChallenge] = useState('surfing');
     const [isClient, setIsClient] = useState(false);
 
@@ -17,7 +17,7 @@ export default function Challenges() {
                 return (
                     <>
                         <div className="no-clients-challenges-title">Список заданий пуст</div>
-                        <button className="add-challenges-button">Добавить задание</button>
+                        <button className="add-challenges-button" onClick={() => setCurrentContent('addChallengeForm')}>Добавить задание</button>
                     </>
                 )
             case false:
