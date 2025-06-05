@@ -7,19 +7,53 @@ export default function Staking() {
     const [currentImage, setCurrentImage] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
     const [counter, setCounter] = useState(1);
-    const images = [miner, miner2];
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+    const [cachedImages, setCachedImages] = useState([]);
+    const imageUrls = [miner, miner2];
 
     useEffect(() => {
+        const preloadImages = async () => {
+            try {
+                const cachedImagePromises = imageUrls.map(async (src) => {
+                    const response = await fetch(src);
+                    const blob = await response.blob();
+                    return URL.createObjectURL(blob);
+                });
+
+                const cachedImageUrls = await Promise.all(cachedImagePromises);
+                setCachedImages(cachedImageUrls);
+                setImagesLoaded(true);
+            } catch (error) {
+                console.error('Ошибка загрузки изображений:', error);
+                setCachedImages(imageUrls);
+                setImagesLoaded(true);
+            }
+        };
+
+        preloadImages();
+
+        return () => {
+            cachedImages.forEach(url => {
+                if (url.startsWith('blob:')) {
+                    URL.revokeObjectURL(url);
+                }
+            });
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!imagesLoaded || cachedImages.length === 0) return;
+
         const interval = setInterval(() => {
             setIsAnimating(true);
             setTimeout(() => {
-                setCurrentImage((prev) => (prev + 1) % images.length);
+                setCurrentImage((prev) => (prev + 1) % cachedImages.length);
                 setIsAnimating(false);
             }, 250);
         }, 1000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [imagesLoaded, cachedImages]);
 
     const [showAccelerateModal, setShowAccelerateModal] = useState(false);
 
@@ -95,10 +129,21 @@ export default function Staking() {
         )
     }
 
+    if (!imagesLoaded) {
+        return (
+            <div className="staking-container">
+                <div className="loading-container">
+                    <div className="loading-spinner"></div>
+                    <div className="loading-text">Загрузка...</div>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div className="staking-container">
             <img 
-                src={images[currentImage]} 
+                src={cachedImages[currentImage]} 
                 alt="Miner animation" 
                 className={`miner-gif ${isAnimating ? 'miner-transition' : ''}`}
             />
