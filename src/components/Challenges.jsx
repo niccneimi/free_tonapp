@@ -23,9 +23,9 @@ export default function Challenges( {setCurrentContent} ) {
             case false:
                 switch (currentChallenge) {
                     case 'surfing':
-                        return <div>Surfing</div>;
+                        return <div className="no-clients-challenges-title">Список заданий пуст</div>;
                     case 'telegram':
-                        return <div>Telegram</div>;
+                        return <div className="no-clients-challenges-title">Список заданий пуст</div>;
                     case 'youtube':
                         return <div><img className="content-not-found" src={catImage} alt="YouTube" /></div>;
                     case 'reviews':
