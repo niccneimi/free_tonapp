@@ -15,6 +15,7 @@ import CashInRequestForm from './components/CashInRequestForm'
 import CashOutForm from './components/CashOutForm'
 import Challenges from './components/Challenges'
 import AddChallengeForm from './components/AddChallengeForm'
+import AddsPackagesForm from './components/AddsPackagesForm'
 
 import './App.css'
 
@@ -75,7 +76,7 @@ function App() {
           case 'advertising':
             return (
               <>
-                <AdvertisingCabinet />
+                <AdvertisingCabinet setCurrentContent={setCurrentContent}/>
                 <ProfileMenu profileSubMenu={profileSubMenu} setProfileSubMenu={setProfileSubMenu}/>
                 <Add />
               </>
@@ -106,6 +107,13 @@ function App() {
         return (
           <>
             <AddChallengeForm />
+            <Add />
+          </>
+        );
+      case 'addAddForm':
+        return (
+          <>
+            <AddsPackagesForm />
             <Add />
           </>
         );

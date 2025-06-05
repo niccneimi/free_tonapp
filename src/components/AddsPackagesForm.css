@@ -1,0 +1,109 @@
+.add-add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-add-form-title {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 800;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+.add-add-form-description {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+.add-add-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: clamp(10px, 3vh, 50px);
+    margin-top: 10px;
+}
+
+.add-add-form-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C9C9C9;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 100%;
+    border-radius: 44px;
+    padding: 10px;
+}
+
+.add-packages-item-left-side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.add-add-form-item-title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.add-add-form-item-description {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.add-add-form-item-value-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.add-add-form-item-price-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-add-form-item-value-title {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.add-add-form-item-price {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    color: #78AA28;
+}
+
+.add-add-form-item-price-icon {
+    width: 20px;
+    height: 20px;
+    scale: 0.8;
+}
+
+.add-add-form-subdescription {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    color: #78AA28;
+    position: relative;
+    top: -7px;
+}

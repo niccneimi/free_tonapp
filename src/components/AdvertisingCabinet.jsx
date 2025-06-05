@@ -1,6 +1,6 @@
 import './AdvertisingCabinet.css';
 import tonIcon from '../assets/ton.svg';
-export default function AdvertisingCabinet() {
+export default function AdvertisingCabinet( {setCurrentContent} ) {
     return (
         <div className="advertising-cabinet">
             <div className="advertising-cabinet-title">Рекламный кабинет</div>
@@ -14,7 +14,7 @@ export default function AdvertisingCabinet() {
             </div>
             <div className="adds-list-title">Список рекламы</div>
             <div className="adds-list">Список пуст</div>
-            <button className="buy-add-button">Купить рекламу</button>
+            <button className="buy-add-button" onClick={() => setCurrentContent('addAddForm')}>Купить рекламу</button>
         </div>
     );
 };
