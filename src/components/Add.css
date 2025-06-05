@@ -1,14 +1,14 @@
 .add-container {
     grid-row-end: auto;
-    margin: 0 auto;
-    max-width: 95%;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     align-items: center;
     position: fixed;
-    bottom: 60px;
-    left: 10px;
+    bottom: 52px;
     z-index: 999;
+    background-color: #121212;
+    padding-bottom: 5px;
 }
 
 @supports (height: 100dvh) {
@@ -29,7 +29,7 @@
 
 @supports (padding-bottom: env(keyboard-inset-height)) {
     .add-container {
-        bottom: calc(60px + env(keyboard-inset-height, 0px));
+        bottom: calc(52px + env(keyboard-inset-height, 0px));
     }
 
     @media screen and (max-height: 500px) {
