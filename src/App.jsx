@@ -104,7 +104,7 @@ function App() {
             <Add />
           </>
         );
-      case 'addChallengeForm':start
+      case 'addChallengeForm':
         return (
           <>
             <AddChallengeForm />
