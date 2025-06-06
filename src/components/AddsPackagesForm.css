@@ -1,11 +1,11 @@
-.add-add-form {
+.add-packages-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.add-add-form-title {
+.add-packages-form-title {
     font-family: 'Montserrat';
     font-size: 24px;
     font-weight: 800;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.add-add-form-description {
+.add-packages-form-description {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 500;
@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-.add-add-form-container {
+.add-packages-form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@
     margin-top: 10px;
 }
 
-.add-add-form-item {
+.add-packages-form-item {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,21 +50,21 @@
     margin-left: 25px;
 }
 
-.add-add-form-item-title {
+.add-packages-form-item-title {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
 }
 
-.add-add-form-item-description {
+.add-packages-form-item-description {
     font-family: 'Montserrat';
     font-size: 13px;
     font-weight: 500;
     color: #000000;
 }
 
-.add-add-form-item-value-container {
+.add-packages-form-item-value-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,34 +72,34 @@
     margin-right: 25px;
 }
 
-.add-add-form-item-price-container {
+.add-packages-form-item-price-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.add-add-form-item-value-title {
+.add-packages-form-item-value-title {
     font-family: 'Montserrat';
     font-size: 13px;
     font-weight: 500;
     color: #000000;
 }
 
-.add-add-form-item-price {
+.add-packages-form-item-price {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 600;
     color: #78AA28;
 }
 
-.add-add-form-item-price-icon {
+.add-packages-form-item-price-icon {
     width: 20px;
     height: 20px;
     scale: 0.8;
 }
 
-.add-add-form-subdescription {
+.add-packages-form-subdescription {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 600;

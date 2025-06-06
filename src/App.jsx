@@ -16,12 +16,13 @@ import CashOutForm from './components/CashOutForm'
 import Challenges from './components/Challenges'
 import AddChallengeForm from './components/AddChallengeForm'
 import AddsPackagesForm from './components/AddsPackagesForm'
-
+import AddAddForm from './components/AddAddForm'
 import './App.css'
 
 function App() {
   const [currentContent, setCurrentContent] = useState('cran')
   const [profileSubMenu, setProfileSubMenu] = useState('profile')
+  const [selectedPackage, setSelectedPackage] = useState(null)
 
   const renderContent = () => {
     switch (currentContent) {
@@ -103,17 +104,24 @@ function App() {
             <Add />
           </>
         );
-      case 'addChallengeForm':
+      case 'addChallengeForm':start
         return (
           <>
             <AddChallengeForm />
             <Add />
           </>
         );
+      case 'addPackagesForm':
+        return (
+          <>
+            <AddsPackagesForm setCurrentContent={setCurrentContent} setSelectedPackage={setSelectedPackage} />
+            <Add />
+          </>
+        );
       case 'addAddForm':
         return (
           <>
-            <AddsPackagesForm />
+            <AddAddForm selectedPackage={selectedPackage} />
             <Add />
           </>
         );

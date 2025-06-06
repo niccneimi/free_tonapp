@@ -14,7 +14,7 @@ export default function AdvertisingCabinet( {setCurrentContent} ) {
             </div>
             <div className="adds-list-title">Список рекламы</div>
             <div className="adds-list">Список пуст</div>
-            <button className="buy-add-button" onClick={() => setCurrentContent('addAddForm')}>Купить рекламу</button>
+            <button className="buy-add-button" onClick={() => setCurrentContent('addPackagesForm')}>Купить рекламу</button>
         </div>
     );
 };
